@@ -1,26 +1,28 @@
 :root {
-  --bg: #f5f5f6;
+  --bg: #e8e9eb;
+  --surface: #f5f5f6;
   --text: #1f2328;
   --muted: #5d6570;
   --accent: #2d6089;
+  --accent-text: #ffffff;
+  --accent-soft: #d9e6f1;
   --border: #c8cbd0;
   --brand-oxi: #c8501e;
   --brand-cut: #1d1c1a;
-  --button: #c8501e;
-  --button-text: #ffffff;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
     --bg: #1a1b1d;
+    --surface: #232427;
     --text: #e4e6e9;
     --muted: #9aa1ab;
     --accent: #6ba3d0;
+    --accent-text: #0c1823;
+    --accent-soft: #223347;
     --border: #3c3f45;
     --brand-oxi: #e8703a;
     --brand-cut: #ecebe7;
-    --button: #e8703a;
-    --button-text: #1a1b1d;
   }
 }
 
@@ -81,8 +83,8 @@ a {
   display: inline-block;
   padding: 0.9rem 1.6rem;
   border-radius: 10px;
-  background: var(--button);
-  color: var(--button-text);
+  background: var(--accent);
+  color: var(--accent-text);
   font-size: 1.15rem;
   font-weight: 600;
   text-decoration: none;
@@ -123,8 +125,8 @@ a {
   width: 2.4rem;
   height: 2.4rem;
   border-radius: 50%;
-  background: var(--brand-oxi);
-  color: var(--button-text);
+  background: var(--accent);
+  color: var(--accent-text);
   font-weight: 700;
   text-align: center;
   line-height: 2.4rem;
@@ -157,4 +159,28 @@ footer {
   border-top: 1px solid var(--border);
   color: var(--muted);
   font-size: 0.85rem;
+}
+
+.wrap.wide {
+  max-width: 64rem;
+}
+
+figure {
+  margin: 1.5rem 0;
+}
+
+figure img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  box-shadow: 0 10px 30px rgb(0 0 0 / 0.18);
+}
+
+figcaption {
+  margin-top: 0.6rem;
+  color: var(--muted);
+  font-size: 0.9rem;
+  text-align: center;
 }
